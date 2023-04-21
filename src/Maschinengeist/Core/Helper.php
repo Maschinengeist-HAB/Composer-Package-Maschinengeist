@@ -31,7 +31,7 @@ class Helper {
         error_log($errorMessage);
 
         try {
-            $mqttClient->publish($errorTopic, $errorMessage, 2, false);
+            $mqttClient->publish($errorTopic, $errorMessage, 1, false);
         } catch (DataTransferException|RepositoryException $e) {
             error_log(
                 sprintf("Error while transmitting error message via MQTT: %s",
