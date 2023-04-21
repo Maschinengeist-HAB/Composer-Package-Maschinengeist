@@ -1,0 +1,26 @@
+{
+  "name": "maschinengeist/maschinengeist-core",
+  "type": "library",
+  "description": "Maschinengeist Core Libraries",
+  "keywords": ["homeautomation","hab"],
+  "homepage": "https://maschinenge.ist/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christoph 'knurd' Morrison",
+      "email": "maschinengeist@christoph-morrison.de"
+    }
+  ],
+  "require": {
+    "php": ">=8.0.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Maschinengeist\\Core": "src"
+    }
+  },
+  "extra": {
+    "installer-name": "Maschinengeist-Core"
+  },
+  "minimum-stability": "dev"
+}
